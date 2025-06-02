@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bistrot do João Bidu - Guaxupé</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fffdfa;
+      color: #333;
+    }
+
+    header {
+      background-color: #6b1e1e;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      flex-wrap: wrap;
+    }
+
+    header img {
+      height: 60px;
+    }
+
+    .pedido-btn {
+      background-color: #fff;
+      color: #6b1e1e;
+      padding: 0.8rem 1.5rem;
+      border: none;
+      border-radius: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .pedido-btn:hover {
+      background-color: #ffe5e5;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1543353071-873f17a7a088?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 4rem 1rem;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      text-shadow: 2px 2px 8px #000;
+    }
+
+    .section {
+      padding: 2rem 1rem;
+      max-width: 1100px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .section h2 {
+      color: #6b1e1e;
+      margin-bottom: 1rem;
+      font-size: 2rem;
+    }
+
+    .produtos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    .produto {
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .produto:hover {
+      transform: scale(1.03);
+    }
+
+    .produto img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .produto h3 {
+      padding: 0.8rem;
+      font-size: 1.1rem;
+    }
+
+    .produto p {
+      padding: 0 0.8rem 1rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    .promo {
+      background-color: #ffe9e0;
+      padding: 2rem;
+      border-radius: 10px;
+      margin-top: 3rem;
+    }
+
+    footer {
+      background-color: #3b1d1d;
+      color: #fff;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 4rem;
+    }
+
+    footer p {
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header>
+    <img src="https://i.imgur.com/H1kzfFB.png" alt="Logo Bistrot do João Bidu">
+    <a href="#cardapio" class="pedido-btn">Fazer Pedido</a>
+  </header>
+
+  <!-- Hero / Banner -->
+  <section class="hero">
+    <h1>Bistrot do João Bidu</h1>
+    <p>O verdadeiro sabor da França em Guaxupé - MG</p>
+  </section>
+
+  <!-- Cardápio -->
+  <section class="section" id="cardapio">
+    <h2>Nosso Cardápio</h2>
+    <div class="produtos">
+      <div class="produto">
+        <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=600&q=80" alt="Coq au Vin">
+        <h3>Coq au Vin</h3>
+        <p>Frango cozido no vinho tinto com cogumelos, bacon e cebolas peroladas.</p>
+      </div>
+      <div class="produto">
+        <img src="https://th.bing.com/th/id/R.25815a9cfe8d6e031e44f3cec76e8e08?rik=YA4%2fU8nEJ9dt1Q&riu=http%3a%2f%2f1.bp.blogspot.com%2f-3fI_IpFk9ok%2fTnIkTa9aBAI%2fAAAAAAAABZ8%2fxfcguTGhJ6s%2fs1600%2fIMG_0739.JPG&ehk=r%2fgtY0Xq58kAT4dKt%2bxQim7HSRV9m0JUun58df0ZUMU%3d&risl=&pid=ImgRaw&r=0" alt="Bouillabaisse">
+        <h3>Bouillabaisse</h3>
+        <p>Ensopado de frutos do mar provençal com ervas aromáticas e açafrão.</p>
+      </div>
+      <div class="produto">
+        <img src="https://veganoporquesim.com.br/wp-content/uploads/2022/07/Ratatouille-Tradicional.webp" alt="Ratatouille">
+        <h3>Ratatouille</h3>
+        <p>Legumes assados ao estilo de Nice: abobrinha, berinjela, tomate e ervas.</p>
+      </div>
+      <div class="produto">
+        <img src="https://th.bing.com/th/id/R.d577397055559c863a6feac00aa1aa79?rik=6T5NLFphiSh7Zg&riu=http%3a%2f%2fimg.food.com%2ffood%2fCreme-Brulee%2b1.JPG&ehk=RrUDieygMwoLvuCUI2fGWF5jB8hjzlCm1v2fywOzRxA%3d&risl=1&pid=ImgRaw&r=0" alt="Crème Brûlée">
+        <h3>Crème Brûlée</h3>
+        <p>Clássica sobremesa francesa com crosta de açúcar caramelizado.</p>
+      </div>
+      <div class="produto">
+        <img src="https://comsaborperfeito.com/wp-content/uploads/2013/10/tarte-tartin.jpg" alt="Tarte Tatin">
+        <h3>Tarte Tatin</h3>
+        <p>Torta de maçã caramelizada servida quente com toque de baunilha.</p>
+      </div>
+      <div class="produto">
+        <img src="https://th.bing.com/th/id/OIP.Hws97Xh7uHKa6LzoQwTvsAHaE7?rs=1&pid=ImgDetMain" alt="Escargots à la Bourguignonne">
+        <h3>Escargots à la Bourguignonne</h3>
+        <p>Caracóis ao molho de manteiga, alho e salsinha - clássico francês.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Promoção -->
+  <section class="section promo">
+    <h2>Especial da Semana</h2>
+    <p>Menu degustação com 3 pratos clássicos + sobremesa por R$ 119,00. Reserve já!</p>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <h2>Bistrot do João Bidu</h2>
+    <p>📌Rua Logo Ali, 32 - Centro - Guaxupé, MG</p>
+    <p>📞Reservas: (35) 99970-7070 • 📞WhatsApp: (35) 98888-7777</p>
+    <p>🕐Aberto de Terça a Domingo – 18h às 23h</p>
+    <p>🔨SUPORTE: Talles, Gean, Luiz Felipe, Isadora, Julio, Gênesis</p>
+    <p>© 2025 Bistrot do João Bidu. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
